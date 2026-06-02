@@ -221,6 +221,29 @@ export default function VocabPicker({ vocabList, onSelect, onCreate, onUpdate, o
             {t('vocab.importVocab')}
           </button>
         </div>
+        {/* Desktop download links — only shown in browser/web mode */}
+        {!IS_TAURI && (
+          <div style={{ marginTop: 28, paddingTop: 20, borderTop: '1px solid #e4e8f0' }}>
+            <div style={{ textAlign: 'center', fontSize: 11, color: '#aaa', marginBottom: 10, letterSpacing: 0.4, textTransform: 'uppercase', fontWeight: 600 }}>
+              Download desktop app
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: 24 }}>
+              {([
+                { label: '↓ Windows', href: 'https://github.com/AVova/LearnArmenianCards/releases/download/v1.0.3/Lang.Cards_1.0.3_x64_en-US.msi' },
+                { label: '↓ Ubuntu', href: 'https://github.com/AVova/LearnArmenianCards/releases/download/v1.0.3/Lang.Cards_1.0.3_amd64.deb' },
+                { label: '↓ macOS', href: 'https://github.com/AVova/LearnArmenianCards/releases/download/v1.0.3/Lang.Cards_1.0.3_aarch64.dmg' },
+              ] as { label: string; href: string }[]).map(({ label, href }) => (
+                <a key={href} href={href}
+                  style={{ fontSize: 13, color: '#4a90e2', textDecoration: 'none', fontWeight: 600 }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.textDecoration = 'underline' }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.textDecoration = 'none' }}
+                >
+                  {label}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {showCreator && (
