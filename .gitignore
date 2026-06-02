@@ -4,3 +4,4 @@ build/
 src-tauri/target/
 *.log
 *.local
+.tmp
