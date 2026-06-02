@@ -1,0 +1,239 @@
+vocabulary:
+  id: vocab-1780419333126-1abb3
+  name: sample111
+  file: vocab-1780419333126-1abb3.yaml
+  learnedLang: arm
+  knownLang: rus
+  showTranscription: true
+  createdAt: '2026-06-02T16:55:33.126Z'
+  wordCount: 12
+meta:
+  lastUpdateDate: '2026-06-02T16:55:33.176Z'
+  lastDebugDateOffset: 0
+categories:
+  - id: cat-1780047613886-a3af
+    name: Alive
+    parentId: null
+    order: 0
+  - id: cat-1780047620119-4bc6
+    name: Artificial
+    parentId: null
+    order: 1
+  - id: cat-1780047629030-2a39
+    name: Buildings
+    parentId: cat-1780047620119-4bc6
+    order: 0
+  - id: cat-1780047633712-9e1d
+    name: People
+    parentId: cat-1780047613886-a3af
+    order: 0
+  - id: cat-1780047641067-d583
+    name: Plants
+    parentId: cat-1780047613886-a3af
+    order: 1
+words:
+  - id: word-001
+    word: Բարև
+    transcription: Barev
+    translations:
+      - lang: en
+        text: Hello
+    metadata:
+      state: S
+      bloom: 0.051795376953880694
+      cramProgress: 0
+      difficulty: 0.43336298618697594
+      importance: 1
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047633712-9e1d
+  - id: word-002
+    word: Շատ
+    transcription: Shat
+    translations:
+      - lang: en
+        text: Very, Much
+    metadata:
+      state: S
+      bloom: 0.051795376953880694
+      cramProgress: 0
+      difficulty: 0.43336298618697594
+      importance: 1
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: adjective
+    categoryIds:
+      - cat-1780047633712-9e1d
+  - id: word-003
+    word: Ջուր
+    transcription: Jur
+    translations:
+      - lang: en
+        text: Water
+      - Nouns
+      - Nature
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047633712-9e1d
+    metadata:
+      state: 'N'
+      bloom: 0
+      cramProgress: 0
+      difficulty: 1
+      importance: 1
+  - id: word-004
+    word: Կատու
+    transcription: Katu
+    translations:
+      - lang: en
+        text: Cat
+      - Nouns
+      - Animals
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047633712-9e1d
+      - cat-1780047641067-d583
+    metadata:
+      state: S
+      bloom: 0.051795376953880694
+      cramProgress: 0
+      difficulty: 0.43336298618697594
+      importance: 1
+  - id: word-005
+    word: Ուտել
+    transcription: Utel
+    translations:
+      - lang: en
+        text: To eat
+      - Verbs
+      - Food
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: verb
+    categoryIds:
+      - cat-1780047633712-9e1d
+    metadata:
+      state: S
+      bloom: 0.051795376953880694
+      cramProgress: 0
+      difficulty: 0.43336298618697594
+      importance: 1
+  - id: word-006
+    word: Սեր
+    transcription: Ser
+    translations:
+      - lang: en
+        text: Love
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047629030-2a39
+    metadata:
+      state: 'N'
+      bloom: 0
+      cramProgress: 0
+      difficulty: 1
+      importance: 1
+  - id: word-007
+    word: Տուն
+    transcription: Tun
+    translations:
+      - lang: en
+        text: House, Home
+      - Nouns
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047629030-2a39
+    metadata:
+      state: 'N'
+      bloom: 0
+      cramProgress: 0
+      difficulty: 1
+      importance: 1
+  - id: word-008
+    word: Գիրք
+    transcription: Girk
+    translations:
+      - lang: en
+        text: Book
+      - Nouns
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047629030-2a39
+    metadata:
+      state: 'N'
+      bloom: 0
+      cramProgress: 0
+      difficulty: 1
+      importance: 1
+  - id: word-009
+    word: Խնձոր
+    transcription: Khndzor
+    translations:
+      - lang: en
+        text: Apple
+      - Nouns
+      - Food
+    metadata:
+      state: 'N'
+      bloom: 0
+      cramProgress: 0
+      difficulty: 1
+      importance: 1
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047641067-d583
+  - id: word-010
+    word: Ծաղիկ
+    transcription: Tsaghik
+    translations:
+      - lang: en
+        text: Flower
+      - Nouns
+      - Nature
+    metadata:
+      state: 'N'
+      bloom: 0
+      cramProgress: 0
+      difficulty: 1
+      importance: 1
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047641067-d583
+  - id: word-1780218489265
+    word: Գիրք
+    transcription: girq
+    translations:
+      - lang: en
+        text: bool
+    metadata:
+      state: 'N'
+      bloom: 0
+      cramProgress: 0
+      difficulty: 1
+      importance: 1
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047641067-d583
+  - id: word-1780218544989
+    word: Արև
+    transcription: arev
+    translations:
+      - lang: en
+        text: sun
+    metadata:
+      state: 'N'
+      bloom: 0
+      cramProgress: 0
+      difficulty: 1
+      importance: 1
+    dateAdded: '2026-06-01T13:28:27.178Z'
+    partOfSpeech: noun
+    categoryIds:
+      - cat-1780047633712-9e1d

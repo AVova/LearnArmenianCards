@@ -1,0 +1,48 @@
+{
+  "identifier": "default",
+  "description": "Default capability — grants file system access to ~/Documents/LangCards and user-chosen import/export paths",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    {
+      "identifier": "fs:allow-read-text-file",
+      "allow": [
+        { "path": "$HOME/Documents/LangCards/**" },
+        { "path": "$HOME/**" }
+      ]
+    },
+    {
+      "identifier": "fs:allow-write-text-file",
+      "allow": [
+        { "path": "$HOME/Documents/LangCards/**" },
+        { "path": "$HOME/**" }
+      ]
+    },
+    {
+      "identifier": "fs:allow-mkdir",
+      "allow": [
+        { "path": "$HOME/Documents" },
+        { "path": "$HOME/Documents/LangCards" },
+        { "path": "$HOME/Documents/LangCards/**" }
+      ]
+    },
+    {
+      "identifier": "fs:allow-exists",
+      "allow": [
+        { "path": "$HOME/Documents" },
+        { "path": "$HOME/Documents/LangCards" },
+        { "path": "$HOME/Documents/LangCards/**" }
+      ]
+    },
+    {
+      "identifier": "fs:allow-read-dir",
+      "allow": [
+        { "path": "$HOME/Documents/LangCards" },
+        { "path": "$HOME/Documents/LangCards/**" }
+      ]
+    },
+    "dialog:default",
+    "dialog:allow-open",
+    "dialog:allow-save"
+  ]
+}

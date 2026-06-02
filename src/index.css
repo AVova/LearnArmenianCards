@@ -1,0 +1,207 @@
+/* ── Design tokens ──────────────────────────────────────── */
+:root {
+  /* Brand colors */
+  --c-primary:  #007bff;
+  --c-success:  #28a745;
+  --c-danger:   #dc3545;
+  --c-purple:   #6f42c1;
+  --c-muted:    #6c757d;
+  --c-warning:  #ffc107;
+  --c-orange:   #fd7e14;
+
+  /* Hover shades */
+  --c-primary-h: #0069d9;
+  --c-success-h: #218838;
+  --c-danger-h:  #c82333;
+  --c-purple-h:  #5a32a3;
+  --c-muted-h:   #5a6268;
+  --c-warning-h: #e0a800;
+  --c-orange-h:  #e8720a;
+
+  /* Neutral scale */
+  --c-gray-50:  #f8f9fa;
+  --c-gray-100: #f0f4f8;
+  --c-gray-200: #e9ecef;
+  --c-gray-300: #dee2e6;
+  --c-gray-600: #666;
+  --c-gray-700: #555;
+  --c-gray-800: #333;
+  --c-text:     #111;
+  --c-muted-t:  #888;
+  --c-faint:    #aaa;
+  --c-ghost:    #ccc;
+
+  /* Spacing */
+  --sp-xs:  4px;
+  --sp-sm:  8px;
+  --sp-md:  16px;
+  --sp-lg:  24px;
+  --sp-xl:  32px;
+  --sp-2xl: 48px;
+
+  /* Border radii */
+  --r-sm:   4px;
+  --r-md:   6px;
+  --r-lg:   8px;
+  --r-xl:   12px;
+  --r-pill: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 24px rgba(0,0,0,.10);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.12);
+  --shadow-xl: 0 10px 40px rgba(0,0,0,.20);
+
+  /* Typography */
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-base: 14px;
+  --text-md:   15px;
+  --text-lg:   16px;
+  --text-xl:   20px;
+}
+
+/* ── Reset / base ───────────────────────────────────────── */
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: #f7f7fb;
+  font-family: Inter, system-ui, Arial;
+  color: var(--c-text);
+}
+
+/* ── Button ─────────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-xs);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: var(--r-md);
+  transition: background-color .15s, opacity .15s, box-shadow .15s;
+  white-space: nowrap;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn:focus-visible { outline: 2px solid var(--c-primary); outline-offset: 2px; }
+.btn-block { width: 100%; }
+
+/* sizes */
+.btn-sm { padding: 4px 10px;  font-size: var(--text-sm); }
+.btn-md { padding: 8px 16px;  font-size: var(--text-base); }
+.btn-lg { padding: 11px 20px; font-size: var(--text-md); font-weight: 600; }
+.btn-xl { padding: 16px 28px; font-size: var(--text-xl); font-weight: 700; }
+
+/* variants */
+.btn-primary { background: var(--c-primary); color: #fff; }
+.btn-primary:hover:not(:disabled) { background: var(--c-primary-h); }
+
+.btn-success { background: var(--c-success); color: #fff; }
+.btn-success:hover:not(:disabled) { background: var(--c-success-h); }
+
+.btn-danger  { background: var(--c-danger);  color: #fff; }
+.btn-danger:hover:not(:disabled)  { background: var(--c-danger-h); }
+
+.btn-purple  { background: var(--c-purple);  color: #fff; }
+.btn-purple:hover:not(:disabled)  { background: var(--c-purple-h); }
+
+.btn-muted   { background: var(--c-muted);   color: #fff; }
+.btn-muted:hover:not(:disabled)   { background: var(--c-muted-h); }
+
+.btn-warning { background: var(--c-warning); color: #212529; font-weight: 600; }
+.btn-warning:hover:not(:disabled) { background: var(--c-warning-h); }
+
+.btn-orange  { background: var(--c-orange);  color: #fff; }
+.btn-orange:hover:not(:disabled)  { background: var(--c-orange-h); }
+
+/* Ghost — light background, visible border */
+.btn-ghost {
+  background: var(--c-gray-50);
+  color: var(--c-gray-800);
+  border: 1px solid var(--c-gray-300);
+}
+.btn-ghost:hover:not(:disabled) { background: var(--c-gray-200); }
+
+/* Dark-subtle — for use inside dark toolbars */
+.btn-dark-subtle {
+  background: var(--c-gray-700);
+  color: #fff;
+  border: 1px solid #777;
+}
+.btn-dark-subtle:hover:not(:disabled) { background: #666; }
+
+/* Link — no background, text only */
+.btn-link {
+  background: none;
+  color: var(--c-muted-t);
+  padding: 4px 8px;
+}
+.btn-link:hover:not(:disabled) { color: var(--c-gray-800); }
+
+/* ── Card ───────────────────────────────────────────────── */
+.card {
+  background: #fff;
+  border-radius: var(--r-xl);
+  box-shadow: var(--shadow-lg);
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* ── Popover ────────────────────────────────────────────── */
+.popover {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: var(--sp-sm);
+  background: #fff;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--c-gray-300);
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  min-width: 180px;
+  max-height: 280px;
+  overflow-y: auto;
+  z-index: 300;
+}
+.popover-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 7px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--text-base);
+  color: var(--c-gray-800);
+  font-family: inherit;
+}
+.popover-item:hover { background: var(--c-gray-100); }
+
+/* ── Exercise card animations ───────────────────────────── */
+@keyframes slideOutLeft  { from { transform: translateX(0);     opacity: 1; } to { transform: translateX(-120%); opacity: 0; } }
+@keyframes slideOutRight { from { transform: translateX(0);     opacity: 1; } to { transform: translateX( 120%); opacity: 0; } }
+@keyframes slideInRight  { from { transform: translateX( 120%); opacity: 0; } to { transform: translateX(0);     opacity: 1; } }
+
+.card-exit-wrong  { animation: slideOutLeft  .35s ease-in  forwards; }
+.card-exit-correct{ animation: slideOutRight .35s ease-in  forwards; }
+.card-enter       { animation: slideInRight  .35s ease-out forwards; }
+
+/* ── ActionButton (DeckExercise) ────────────────────────── */
+.action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  min-width: 100px;
+  transition: transform 0.15s, background-color 0.15s, color 0.15s, box-shadow 0.15s;
+  font-family: inherit;
+}
