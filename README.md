@@ -1,18 +1,29 @@
 # Lang Cards
 
-Vocabulary flashcard app with spaced repetition. No server, no account — your words live in YAML files you own.
+Vocabulary flashcard app with spaced repetition. Just open it and start learning — no setup, no account, no database to think about.
+
+**Try it online:** https://vova-lang-cards.netlify.app/
 
 ## Features
 
-- **Spaced repetition** — N/C/S/R state machine (New → Consolidating → Blossoming → Ready) with a Bloom + Cram model
+- **Spaced repetition** — words move through four stages (New → Consolidating → Blossoming → Ready), reviewed at the right time automatically
 - **Card-flip exercise** — multi-round sessions with Wrong/Correct/Undo; keyboard shortcuts (Space / ← / →)
-- **Vocabulary manager** — create multiple vocabs, import/export YAML, rename, set language pair
+- **Vocabulary manager** — create multiple vocabs, import/export, rename, set language pair
 - **Four library views** — flat, grammar (by part of speech), A–Z, custom category tree
-- **Bulk actions** — set PoS, attach/detach categories, delete, exercise a selection
-- **Browser + desktop** — runs as a web app (localStorage) or native desktop app (Tauri, `~/Documents/LangCards/`)
+- **Bulk actions** — set part of speech, attach/detach categories, delete, exercise a selection
+- **Importance levels** — mark words ★★★ to review them more often
 - **Localization** — English / Russian / Armenian UI
 
-## Running
+## Install
+
+| Platform | Download |
+|---|---|
+| Windows | [Lang.Cards_1.0.3_x64_en-US.msi](https://github.com/AVova/LearnArmenianCards/releases/download/v1.0.3/Lang.Cards_1.0.3_x64_en-US.msi) |
+| Ubuntu / Debian | [Lang.Cards_1.0.3_amd64.deb](https://github.com/AVova/LearnArmenianCards/releases/download/v1.0.3/Lang.Cards_1.0.3_amd64.deb) |
+| macOS (Apple Silicon) | [Lang.Cards_1.0.3_aarch64.dmg](https://github.com/AVova/LearnArmenianCards/releases/download/v1.0.3/Lang.Cards_1.0.3_aarch64.dmg) |
+| macOS (Intel) | [Lang.Cards_1.0.3_x64.dmg](https://github.com/AVova/LearnArmenianCards/releases/download/v1.0.3/Lang.Cards_1.0.3_x64.dmg) |
+
+## Running locally
 
 ```bash
 npm install
@@ -28,7 +39,7 @@ npx tsc --noEmit     # type-check
 
 ## Stack
 
-React 18 · TypeScript 5 · Vite 5 · Tauri 2 (optional desktop wrapper)
+React 18 · TypeScript 5 · Vite 5 · Tauri 2
 
 ## Docs
 
